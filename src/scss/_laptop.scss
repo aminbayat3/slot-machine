@@ -1,0 +1,16 @@
+@media(max-width: 1600px) {
+    .header {
+        padding-left: 0;
+        padding-right: 10%;
+    }
+    .header .header-left-part {
+        justify-content: flex-end;
+    }
+}
+
+
+// .header .header-right-part {
+//     display: flex;
+//     justify-content: flex-end;
+
+// }

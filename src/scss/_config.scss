@@ -1,0 +1,53 @@
+$red-color: rgb(255, 22, 22);
+$yellow-color: rgb(255, 223, 79);
+$purple-color: rgb(184, 36, 184);
+$white-color: #fff;
+$pink-color: #f09;
+$borderW: 0.2rem;
+$numOfBlobs: 4;
+//Centeralizing
+@mixin centeralize(){
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+@mixin center-one() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin center-two() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin footer-text() {
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: rgb(255, 22, 22);
+    text-shadow: 0 0.1rem 0.3rem rgb(255, 251, 0);
+}
+
+@mixin amount-text() {
+    width: 70%;
+    height: 40%;
+    @include centeralize();
+    background:  linear-gradient(rgb(255, 157, 0),rgb(255, 217, 0), rgb(255, 157, 0));
+    border-radius: 1rem;
+    color: $red-color;
+    font-size: 2rem;
+}
+
+@mixin coin-amount() {
+    width: 3rem;
+    height: 2.2rem;
+    text-align: center;
+}
+
+@mixin flourish() {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+}
